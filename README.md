@@ -14,11 +14,8 @@ Prepare your input instance in .txt format (e.g., I_8_5_2_2_1.txt) following the
 Set the instance_file variable in gantsolver.py to point to your own .txt file path.
 
 Run the script.
-
-bash
-复制
-编辑
 python gantsolver.py
+
 📂 Output
 After running the solver, a folder named results/ will be automatically generated. It contains:
 
