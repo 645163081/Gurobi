@@ -65,7 +65,7 @@ def parse_instance_data(txt_data):
 
     for i in range(n):
         if block_idx >= len(txt_data):
-            print(f"错误：缺少作业{i + 1}的处理时间数据")
+            print(f"Error: Missing processing time data for task {i + 1}")
             return None
 
         block = txt_data[block_idx]
@@ -86,9 +86,8 @@ def parse_instance_data(txt_data):
             break
         block_idx += 1
 
-    print(f"装配集数量 H={H}")
+    print(f"Assembly set quantity H={H}")
 
-    # 装配时间数据
     p_A = [0] * (H + 1)
     for h in range(1, H + 1):
         if block_idx >= len(txt_data):
@@ -106,7 +105,6 @@ def parse_instance_data(txt_data):
         p_A[h] = ass_time
         block_idx += 1
 
-    # 作业归属信息
     prod_jobs = [[] for _ in range(H + 1)]
     for i in range(1, n + 1):
         if block_idx >= len(txt_data):
