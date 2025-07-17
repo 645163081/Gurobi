@@ -21,7 +21,5 @@ After running the solver, a folder named results/ will be automatically generate
 
 Gantt chart (gantt.png): Visual representation of the optimized schedule, including job-machine assignments and assembly operations.
 
-Scheduling results file: Includes the job sequences, energy-efficient operation data, and timing information.
-
 📚 Case Study
 The file I_20_5_2_4_7.txt represents a real-world automotive engine block manufacturing scenario.
