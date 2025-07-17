@@ -1,5 +1,5 @@
 Gurobi-EEDAPFSP Solver
-This project provides a Gurobi-based Mixed Integer Linear Programming (MILP) implementation to solve the Energy-Efficient Distributed Assembly Permutation Flow-shop Scheduling Proble (EEDAPFSP). The proposed model integrates job sequencing, machine allocation, and three energy-saving strategies: shutdown, speed adjustment, and job postponement. The optimization objectives are to minimize the makespan and the total energy consumption (TEC).
+This project provides a Gurobi-based Mixed Integer Linear Programming (MILP) implementation to solve the Energy-Efficient Distributed Assembly Permutation Flow-shop Scheduling Proble (EEDAPFSP). The proposed model integrates job sequencing, machine allocation, and three energy-saving strategies: shutdown, speed adjustment, and job delay. The optimization objectives are to minimize the makespan and the total energy consumption (TEC).
 
 🔧 File Overview
 gantsolver.py: The main script that builds and solves the MILP model using the Gurobi solver. It also visualizes the resulting schedule as a Gantt chart.
