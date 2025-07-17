@@ -288,10 +288,8 @@ def solve_eedapfsp(instance_data, output_dir="results"):
 
     idle_power = instance_data.get('idle_power', 1.0)
     shutdown_power = instance_data.get('shutdown_power', 4.5)
-    shutdown_threshold = instance_data.get('shutdown_threshold', 4.50)
 
     max_pt = max(max(row) for row in pt) / min(speeds)
-    M = (n * m * max_pt) * 2
 
     model = gp.Model("EEDAPFSP")
     model.setParam('NumericFocus', 3)
